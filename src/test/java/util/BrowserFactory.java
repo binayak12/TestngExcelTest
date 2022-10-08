@@ -21,26 +21,26 @@ public class BrowserFactory {
 		if(browserName.equalsIgnoreCase("Chrome")) {
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
-			return driver;
 		}
 		
-		if(browserName.equalsIgnoreCase("FireFox")) {
+		else if(browserName.equalsIgnoreCase("FireFox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
-			return driver;
 		}
 		
-		if (browserName.equalsIgnoreCase("Edge")) {
+		else if (browserName.equalsIgnoreCase("Edge")) {
 			WebDriverManager.edgedriver().setup();
 			driver = new EdgeDriver();
-			return driver;
 		}
 		
 		else {
 			WebDriverManager.chromedriver();
 			driver = new ChromeDriver();
-			return driver;
 		}
+		
+		driver.manage().window().maximize();
+		
+		return driver;
 	}
 	
 	public static WebDriver getBrowser() {
