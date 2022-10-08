@@ -1,5 +1,10 @@
 package util;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -9,7 +14,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class BrowserFactory {
 	
-	public static WebDriver startBrowser(String browserName) {
+	public static WebDriver getBrowser(String browserName) {
 		
 		WebDriver driver;
 		
@@ -36,6 +41,33 @@ public class BrowserFactory {
 			driver = new ChromeDriver();
 			return driver;
 		}
+	}
+	
+	public static WebDriver getBrowser() {
+		WebDriver driver;
+		Properties property = new Properties();
+		try {
+			FileInputStream propertyFile = new FileInputStream("/SimpleExcelTest/src/test/java/config/properties.feature");
+			try {
+				property.load(propertyFile);
+				driver = getBrowser(property.get("browser").toString());
+				return driver;
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+				System.out.println("Not Able to Load the FIle");
+				driver = getBrowser("Chrome");
+				return driver;
+			}
+			
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			System.out.println("File Not Tracable");
+			driver = getBrowser("Chrome");
+			return driver;
+		}
+		
 	}
 
 }
