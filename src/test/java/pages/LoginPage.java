@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 public class LoginPage {
 	
 	static WebDriver driver;
-	static String url;
+	static String url, afterLoginUrl;
 	static Actions action;
 	
 	@FindBy(id = "user-name")
@@ -26,6 +26,7 @@ public class LoginPage {
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
 		url = "https://www.saucedemo.com/";
+		afterLoginUrl = "https://www.saucedemo.com/inventory.html";
 		action = new Actions(driver);
 	}
 	
@@ -34,9 +35,33 @@ public class LoginPage {
 	}
 	
 	public static void enterUsername(String uname) {
-		action.keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).sendKeys(Keys.BACK_SPACE).build().perform();
-		action.sendKeys(unameField, uname);
+		action.click(unameField).keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).sendKeys(Keys.BACK_SPACE).build().perform();
+		action.sendKeys(unameField, uname).perform();
+	}
+	
+	public static void enterPassword(String pwd) {
+		action.click(pwdField).keyDown(Keys.CONTROL).sendKeys("A").keyUp(Keys.CONTROL).sendKeys(Keys.BACK_SPACE).build().perform();
+		action.sendKeys(pwdField, pwd).perform();
+	}
+	
+	public static void clickLoginBtn() {
+		action.click(loginBtn).perform();
+	}
+	
+	public static void login(String uname, String pwd) {
+		getToLoginPage();
+		enterUsername(uname);
+		enterPassword(pwd);
+		clickLoginBtn();
+	}
+	
+	public static Boolean checkSuccessfulLogin() {
+		String currentUrl = driver.getCurrentUrl();
 		
+		if (currentUrl.equals(afterLoginUrl))
+			return true;
+		else
+			return false;
 	}
 
 }

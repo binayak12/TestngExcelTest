@@ -47,7 +47,7 @@ public class BrowserFactory {
 		WebDriver driver;
 		Properties property = new Properties();
 		try {
-			FileInputStream propertyFile = new FileInputStream("/SimpleExcelTest/src/test/java/config/properties.feature");
+			FileInputStream propertyFile = new FileInputStream("src/test/java/config/properties.feature");
 			try {
 				property.load(propertyFile);
 				driver = getBrowser(property.get("browser").toString());
