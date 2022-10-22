@@ -34,8 +34,8 @@ public class BrowserFactory {
 		}
 		
 		else {
-			WebDriverManager.chromedriver();
-			driver = new ChromeDriver();
+			WebDriverManager.edgedriver();
+			driver = new EdgeDriver();
 		}
 		
 		driver.manage().window().maximize();
@@ -47,7 +47,7 @@ public class BrowserFactory {
 		WebDriver driver;
 		Properties property = new Properties();
 		try {
-			FileInputStream propertyFile = new FileInputStream("src/test/java/config/properties.feature");
+			FileInputStream propertyFile = new FileInputStream("src/test/java/config/property.properties");
 			try {
 				property.load(propertyFile);
 				driver = getBrowser(property.get("browser").toString());
@@ -56,7 +56,7 @@ public class BrowserFactory {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 				System.out.println("Not Able to Load the FIle");
-				driver = getBrowser("Chrome");
+				driver = getBrowser("Edge");
 				return driver;
 			}
 			
@@ -64,7 +64,7 @@ public class BrowserFactory {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 			System.out.println("File Not Tracable");
-			driver = getBrowser("Chrome");
+			driver = getBrowser("Edge");
 			return driver;
 		}
 		

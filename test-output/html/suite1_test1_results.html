@@ -1,0 +1,888 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <meta name="description" content="TestNG unit test results." />
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/reportngClass.css" rel="stylesheet" />
+  <script type="text/javascript" src="js/reportngClass.js"></script>
+  <script type="text/javascript" src="js/jquery-1.4.4.min.js"></script> 
+  <script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+  <script type="text/javascript" src="js/json-min.js"></script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+		$('.tablesorter').tablesorter({sortList: [[0,0]]});
+	});
+  </script>
+</head>
+<body onload="doParse(); return false;" onkeypress="collapseExpand();">
+<div class="well well-large">
+	<b>Test Info</>
+	<table class="table">
+	  <tr>
+	    <th>Test Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Test name</span>
+			</div>
+	    </th>
+	    <th id="testNameId">Test</th> 
+	  </tr>
+	  <tr>
+	    <th>Test Class : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassId')"/>
+	    		<span class="tooltiptextCustom">Copy full path Class name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#testClassNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Class name</span>
+			</div>
+	    </th> 
+	    <th id="testClassId">testng.NewTest</th>
+	    <th id="testClassNameId" hidden="true">NewTest</th>
+	  </tr>
+	  <tr>
+	    <th>Suite Name : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite name</span>
+			</div>
+		</th>
+	    <th id="suiteNameId">Suite</th>
+	  </tr>
+	  <tr>
+	    <th>Suite XML : </th>
+	    <th>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite full path name</span>
+			</div>
+	    	<div class="tooltipCustom">
+	    		<img src="images/copy.png" width="10" height="15" alt="Copy to Clipboard" onclick="copyToClipboard('#suiteXMLNameId')"/>
+	    		<span class="tooltiptextCustom">Copy Suite file name</span>
+			</div>
+	    </th> 
+	  	<th id="suiteXMLId">E:\SoftwareTesting\Projects\TestngExcelTest\testng.xml</th>
+	  	<th id="suiteXMLNameId" hidden="true">testng.xml</th>
+	  </tr>
+	  	  <tr>
+	    <th>Total Time : </th>
+	    <th></th>
+	    <th>00:00:34</th> 
+	  </tr>
+	  <tr>
+	    <th>Total Steps : </th>
+	   	<th></th>
+	    <th>2</th> 
+	  </tr>
+	  <tr>
+	    <th>Status : </th>
+	    <th></th>
+	    <th><font color="red">FAIL</font></th> 
+	  </tr>
+	</table>
+</div>
+<div class="well well-large">
+	<div class="row">
+		<div class="col-xs-12">
+	        <div class="text-right">
+	            <button id="hideResults" type="button" class="btn-danger" onclick="collapseExpand(this);" onkeypress="collapseExpand(this);" class="btn pull-right" title="Click or Press Any key to collapse/expand All Failed Tests and Configuration Methods">Show Only Failures</button>
+	        </div>
+	    </div>
+	</div>
+	<table class="tablesorter" border="1">
+		<thead>
+		<tr>
+		<th class="headerTime">Time</th>
+		<th class="headerTime" width="12%">Info</th>
+		<th class="headerTime" width="88%">Test</th>
+		</tr>
+		</thead>
+		<tbody>
+		
+				
+				
+												
+											<tr>
+	<td class="time">1665772897591</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('a172cb3f-db64-4ec6-b2cb-bfad92d154de','block');changeSingleIcon('span-a172cb3f-db64-4ec6-b2cb-bfad92d154de');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-a172cb3f-db64-4ec6-b2cb-bfad92d154de' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772897591</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.821s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"performance_glitch_user", "rrr"</span><br>
+				<div class="noCollapse" id="a172cb3f-db64-4ec6-b2cb-bfad92d154de" style="display: block;">
+						<a href="javascript:toggleElement('exception-a172cb3f-db64-4ec6-b2cb-bfad92d154de','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-a172cb3f-db64-4ec6-b2cb-bfad92d154de">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772891119</td>
+	<td class="header failed" colspan="4" onClick="toggleElement('620759be-1849-4335-a6df-a4a82f91c840','block');changeSingleIcon('span-620759be-1849-4335-a6df-a4a82f91c840');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-620759be-1849-4335-a6df-a4a82f91c840' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772891119</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.788s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"locked_out_user", "rrr"</span><br>
+				<div class="noCollapse" id="620759be-1849-4335-a6df-a4a82f91c840" style="display: block;">
+						<a href="javascript:toggleElement('exception-620759be-1849-4335-a6df-a4a82f91c840','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-620759be-1849-4335-a6df-a4a82f91c840">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+											<tr>
+	<td class="time">1665772892914</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('8d3c50ad-5849-4596-9e31-ff80a00c337d','block');changeSingleIcon('span-8d3c50ad-5849-4596-9e31-ff80a00c337d');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-8d3c50ad-5849-4596-9e31-ff80a00c337d' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772892914</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.874s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"performance_glitch_user", "rrr"</span><br>
+				<div class="stackTrace" id="8d3c50ad-5849-4596-9e31-ff80a00c337d" style="display: block;">
+						<a href="javascript:toggleElement('exception-8d3c50ad-5849-4596-9e31-ff80a00c337d','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-8d3c50ad-5849-4596-9e31-ff80a00c337d">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772893862</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('1dbc9e46-9b3e-4b54-aeb5-8bcda02caf05','block');changeSingleIcon('span-1dbc9e46-9b3e-4b54-aeb5-8bcda02caf05');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-1dbc9e46-9b3e-4b54-aeb5-8bcda02caf05' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772893862</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.820s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"performance_glitch_user", "rrr"</span><br>
+				<div class="stackTrace" id="1dbc9e46-9b3e-4b54-aeb5-8bcda02caf05" style="display: block;">
+						<a href="javascript:toggleElement('exception-1dbc9e46-9b3e-4b54-aeb5-8bcda02caf05','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-1dbc9e46-9b3e-4b54-aeb5-8bcda02caf05">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772888409</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('f079755b-8305-4f34-9c93-0de3d2684ecf','block');changeSingleIcon('span-f079755b-8305-4f34-9c93-0de3d2684ecf');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-f079755b-8305-4f34-9c93-0de3d2684ecf' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772888409</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.799s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"locked_out_user", "rrr"</span><br>
+				<div class="stackTrace" id="f079755b-8305-4f34-9c93-0de3d2684ecf" style="display: block;">
+						<a href="javascript:toggleElement('exception-f079755b-8305-4f34-9c93-0de3d2684ecf','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-f079755b-8305-4f34-9c93-0de3d2684ecf">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772890266</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('4c735c65-81d3-4100-82dc-d4ab7ccffcc7','block');changeSingleIcon('span-4c735c65-81d3-4100-82dc-d4ab7ccffcc7');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-4c735c65-81d3-4100-82dc-d4ab7ccffcc7' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772890266</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.771s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"locked_out_user", "rrr"</span><br>
+				<div class="stackTrace" id="4c735c65-81d3-4100-82dc-d4ab7ccffcc7" style="display: block;">
+						<a href="javascript:toggleElement('exception-4c735c65-81d3-4100-82dc-d4ab7ccffcc7','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-4c735c65-81d3-4100-82dc-d4ab7ccffcc7">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772896690</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('988ae378-b49d-41b9-80af-57102952a74d','block');changeSingleIcon('span-988ae378-b49d-41b9-80af-57102952a74d');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-988ae378-b49d-41b9-80af-57102952a74d' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772896690</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.797s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"performance_glitch_user", "rrr"</span><br>
+				<div class="stackTrace" id="988ae378-b49d-41b9-80af-57102952a74d" style="display: block;">
+						<a href="javascript:toggleElement('exception-988ae378-b49d-41b9-80af-57102952a74d','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-988ae378-b49d-41b9-80af-57102952a74d">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772889290</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('a8955fb2-7b7f-483b-a14e-05d2618a8d54','block');changeSingleIcon('span-a8955fb2-7b7f-483b-a14e-05d2618a8d54');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-a8955fb2-7b7f-483b-a14e-05d2618a8d54' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772889290</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.841s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"locked_out_user", "rrr"</span><br>
+				<div class="stackTrace" id="a8955fb2-7b7f-483b-a14e-05d2618a8d54" style="display: block;">
+						<a href="javascript:toggleElement('exception-a8955fb2-7b7f-483b-a14e-05d2618a8d54','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-a8955fb2-7b7f-483b-a14e-05d2618a8d54">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772894784</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('078290cc-7b11-4fa6-8f7f-1a044fa2c580','block');changeSingleIcon('span-078290cc-7b11-4fa6-8f7f-1a044fa2c580');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-078290cc-7b11-4fa6-8f7f-1a044fa2c580' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772894784</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.833s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"performance_glitch_user", "rrr"</span><br>
+				<div class="stackTrace" id="078290cc-7b11-4fa6-8f7f-1a044fa2c580" style="display: block;">
+						<a href="javascript:toggleElement('exception-078290cc-7b11-4fa6-8f7f-1a044fa2c580','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-078290cc-7b11-4fa6-8f7f-1a044fa2c580">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772887234</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('066a04c7-204a-49fa-a1b5-270f6974543f','block');changeSingleIcon('span-066a04c7-204a-49fa-a1b5-270f6974543f');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-066a04c7-204a-49fa-a1b5-270f6974543f' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772887234</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>1.073s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"locked_out_user", "rrr"</span><br>
+				<div class="stackTrace" id="066a04c7-204a-49fa-a1b5-270f6974543f" style="display: block;">
+						<a href="javascript:toggleElement('exception-066a04c7-204a-49fa-a1b5-270f6974543f','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-066a04c7-204a-49fa-a1b5-270f6974543f">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772885769</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('791c739f-9daf-44b8-bf1d-bb7f00898b18','block');changeSingleIcon('span-791c739f-9daf-44b8-bf1d-bb7f00898b18');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-791c739f-9daf-44b8-bf1d-bb7f00898b18' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772885769</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>1.276s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"locked_out_user", "rrr"</span><br>
+				<div class="stackTrace" id="791c739f-9daf-44b8-bf1d-bb7f00898b18" style="display: block;">
+						<a href="javascript:toggleElement('exception-791c739f-9daf-44b8-bf1d-bb7f00898b18','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-791c739f-9daf-44b8-bf1d-bb7f00898b18">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+					<tr>
+	<td class="time">1665772895710</td>
+	<td class="header skipped" colspan="4" onClick="toggleElement('bffd5423-b0f4-41f4-8216-92d37908505c','block');changeSingleIcon('span-bffd5423-b0f4-41f4-8216-92d37908505c');" title="Click to expand/collapse" style="cursor: pointer;">
+	<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+	<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-bffd5423-b0f4-41f4-8216-92d37908505c' class="glyphicon glyphicon-menu-down"></span></div>
+	</td>
+	</tr>
+<tr>
+	<td class="time">1665772895710</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.893s</span><br>
+	</td>
+	<td class="result">
+		 							<i>Depends on method(s): </i>
+			<span class="dependency">testng.NewTest.validLogin</span>
+						<i>Method arguments: </i><span class="arguments">"performance_glitch_user", "rrr"</span><br>
+				<div class="stackTrace" id="bffd5423-b0f4-41f4-8216-92d37908505c" style="display: block;">
+						<a href="javascript:toggleElement('exception-bffd5423-b0f4-41f4-8216-92d37908505c','block')" title="Click to expand/collapse"><b>java.lang.AssertionError: expected [true] but found [false]</b></a><br/>
+		<div class="stackTrace" id="exception-bffd5423-b0f4-41f4-8216-92d37908505c">
+					org.testng.Assert.fail(Assert.java:110)<br/>
+					org.testng.Assert.failNotEquals(Assert.java:1413)<br/>
+					org.testng.Assert.assertEqualsImpl(Assert.java:149)<br/>
+					org.testng.Assert.assertEquals(Assert.java:131)<br/>
+					org.testng.Assert.assertEquals(Assert.java:1020)<br/>
+					testng.NewTest.testMultipleUserDetials(NewTest.java:48)<br/>
+					java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)<br/>
+					java.base/java.lang.reflect.Method.invoke(Method.java:578)<br/>
+					org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)<br/>
+					org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:263)<br/>
+					org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:62)<br/>
+					org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)<br/>
+					org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)<br/>
+					org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)<br/>
+					org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)<br/>
+					java.base/java.util.ArrayList.forEach(ArrayList.java:1511)<br/>
+					org.testng.TestRunner.privateRun(TestRunner.java:806)<br/>
+					org.testng.TestRunner.run(TestRunner.java:601)<br/>
+					org.testng.SuiteRunner.runTest(SuiteRunner.java:433)<br/>
+					org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)<br/>
+					org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)<br/>
+					org.testng.SuiteRunner.run(SuiteRunner.java:330)<br/>
+					org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)<br/>
+					org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)<br/>
+					org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)<br/>
+					org.testng.TestNG.runSuitesLocally(TestNG.java:1176)<br/>
+					org.testng.TestNG.runSuites(TestNG.java:1099)<br/>
+					org.testng.TestNG.run(TestNG.java:1067)<br/>
+					org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)<br/>
+					org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)<br/>
+					org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)<br/>
+						</div>
+		</td>
+	</div>
+</tr>
+						
+												<tr>
+			<td class="time">1665772884505</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('e66fd3e0-2904-492e-816d-e810f893a653','block');changeSingleIcon('span-e66fd3e0-2904-492e-816d-e810f893a653');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+			<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-e66fd3e0-2904-492e-816d-e810f893a653' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1665772884505</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>1.057s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"standard_user", "secret_sauce"</span><br>
+				<div class="stackTrace" id="e66fd3e0-2904-492e-816d-e810f893a653" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1665772871825</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('7ca664fa-da3d-4110-9cad-8309d9c16000','block');changeSingleIcon('span-7ca664fa-da3d-4110-9cad-8309d9c16000');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+			<div style="float:right;">@Test @ with DataProvider : [""] &nbsp;&nbsp;<span id='span-7ca664fa-da3d-4110-9cad-8309d9c16000' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1665772871825</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>validLogin</span><br>
+			<span class="description"><b>Description: </b></span><br>
+						<span class="description"><b>Groups: </b><font color='green'>smokeTest</font></span><br>
+				<span class="duration"><b>Duration: </b>7.281s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"standard_user", "secret_sauce"</span><br>
+				<div class="stackTrace" id="7ca664fa-da3d-4110-9cad-8309d9c16000" style="display: block;">
+					</td>
+	</div>
+</tr>
+						<tr>
+			<td class="time">1665772891980</td>
+			<td class="header passed" colspan="4" onClick="toggleElement('292fed05-1fe7-4709-9a86-de237d4e4c14','block');changeSingleIcon('span-292fed05-1fe7-4709-9a86-de237d4e4c14');" title="Click to expand/collapse" style="cursor: pointer;">
+			<div style="float:left;"><i>Class&nbsp;:&nbsp;</i>testng.NewTest</div>
+			<div style="float:right;">@Test @ with DataProvider : ["loginDetails"] &nbsp;&nbsp;<span id='span-292fed05-1fe7-4709-9a86-de237d4e4c14' class="glyphicon glyphicon-menu-down"></span></div>
+			</td>
+			</tr>
+			<tr>
+	<td class="time">1665772891980</td>
+	<td class="methodTest">
+		<span class="description"><b>Method: </b>testMultipleUserDetials</span><br>
+			<span class="description"><b>Description: </b></span><br>
+				<span class="description"><b>Priority: </b><font color='blue'>1</font></span><br>
+					<span class="description"><b>Groups: </b><font color='green'>recursionTest</font></span><br>
+				<span class="duration"><b>Duration: </b>0.852s</span><br>
+	</td>
+	<td class="result">
+					<i>Method arguments: </i><span class="arguments">"problem_user", "secret_sauce"</span><br>
+				<div class="stackTrace" id="292fed05-1fe7-4709-9a86-de237d4e4c14" style="display: block;">
+					</td>
+	</div>
+</tr>
+					  
+	</tbody>
+	</table>
+</div>
+</body>
+</html>
